@@ -32,13 +32,14 @@
   }
 </script>
 <style lang="stylus" scoped>
-  .wrapper>>>.swiper-pagination-bullet-active
-    background:#fff !important
+  .wrapper>>> .swiper-pagination-bullet-active
+    background #fff !important
   .wrapper
-    height:100%;
-    height:0
-    overflow:hidden
-    padding-bottom:31.25%;
+    overflow hidden
+    width 100%
+    height 0
+    padding-bottom 26.25%
+    background-color #eee
     .swiper-img
-      width:100%
+      width 100%
 </style>
