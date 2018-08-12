@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper >
+    <swiper :options="swiperOption" >
       <swiper-slide v-for="(page,index) of pages" :key="index">
         <div class="icon"
               v-for="item of page"
@@ -22,8 +22,7 @@
     data(){
       return{
         swiperOption:{
-          pagination:'.swiper-pagination',
-          loop:false
+          autoplay:false
         },
         iconList:[{
           id:'0001',
@@ -85,7 +84,7 @@
   @import "~styles/mixin.styl";
   .icons>>> .swiper-container
     height:0;
-    padding-bottom:50%;
+    padding-bottom:46%;
     padding-top: .1rem;
   .icon
     float:left;
