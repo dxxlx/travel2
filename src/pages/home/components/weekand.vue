@@ -2,7 +2,7 @@
   <div>
     <div class="recommand-title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommandList">
+      <li class="item border-bottom" v-for="item of weekendList">
         <div class="item-img-wrappeer">
           <img class="item-img" :src="item.imgUrl" alt="">
         </div>
@@ -17,24 +17,12 @@
 <script>
   export default {
     name:'HomeWeekand',
+    props:{
+      weekendList:Array
+    },
     data(){
       return{
-        recommandList:[{
-          id:"0001",
-          imgUrl:"http://img1.qunarzz.com/sight/source/1505/19/58f233e11df7ef.jpg_r_640x214_6b42c9fc.jpg",
-          title:"华夏文旅海洋公园",
-          desc:"华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园"
-        },{
-          id:"0001",
-          imgUrl:"http://img1.qunarzz.com/sight/source/1505/19/58f233e11df7ef.jpg_r_640x214_6b42c9fc.jpg",
-          title:"华夏文旅海洋公园",
-          desc:"华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园"
-        },{
-          id:"0001",
-          imgUrl:"http://img1.qunarzz.com/sight/source/1505/19/58f233e11df7ef.jpg_r_640x214_6b42c9fc.jpg",
-          title:"华夏文旅海洋公园",
-          desc:"华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园"
-        }]
+
       }
     }
   }
@@ -48,7 +36,7 @@
   .item-img-wrappeer
     height:0
     overflow:hidden
-    padding-bottom:33.9%
+    padding-bottom:37.09%
   .item-img
     width:100%
   .item-info

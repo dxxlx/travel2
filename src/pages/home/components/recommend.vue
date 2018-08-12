@@ -2,7 +2,7 @@
   <div>
     <div class="recommand-title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommandList">
+      <li class="item border-bottom" v-for="item of recommendList">
         <img class="item-img" :src="item.imgUrl" alt="">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -16,24 +16,12 @@
 <script>
   export default {
     name:'HomeRecommad',
+    props:{
+      recommendList:Array
+    },
     data(){
       return{
-        recommandList:[{
-          id:"0001",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1804/51/512ff9f3a6e9b1a6a3.water.jpg_200x200_f7123f52.jpg",
-          title:"华夏文旅海洋公园",
-          desc:"华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园"
-        },{
-          id:"0001",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1804/51/512ff9f3a6e9b1a6a3.water.jpg_200x200_f7123f52.jpg",
-          title:"华夏文旅海洋公园",
-          desc:"华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园"
-        },{
-          id:"0001",
-          imgUrl:"http://img1.qunarzz.com/sight/p0/1804/51/512ff9f3a6e9b1a6a3.water.jpg_200x200_f7123f52.jpg",
-          title:"华夏文旅海洋公园",
-          desc:"华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园华夏文旅海洋公园"
-        }]
+
       }
     }
   }
